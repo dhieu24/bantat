@@ -1,0 +1,392 @@
+#modalbox 
+{
+    position: fixed;
+    height: 60%;
+    width: 50%;
+    background-color: white;
+    z-index: 1;
+    top: 150px;
+    left: 375px;
+    text-align: center;
+}
+#modalboxback
+{
+    position: absolute;
+    background-color: white;
+    padding-left: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+#close1 {
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    float: right;
+}
+
+
+.container  
+{
+    width: 100%;
+    height: auto;
+}
+.listmenu
+{
+    width: 90%;
+    height: 167Px;
+}
+    .menu1
+{
+    width: 100%;
+    height: 115px;
+    margin: 0 auto;
+}
+
+.menu1 ul {
+    list-style: none;
+    margin-left: 60px;
+}
+.menu1 ul li 
+{
+    display: inline-block;
+    padding: 10px ;
+}
+.menu1 ul li a 
+{
+    text-decoration: none;
+}
+.menu1 ul li a:hover
+{
+    color: rgba(230, 138, 105, 0.678);
+}
+.menu1 ul li a img {
+    vertical-align: middle;
+}
+
+.logo a 
+{
+    padding-right: 300px    ;
+    padding-left: 20px;
+}
+/* menu2 */
+.menu2
+{
+    width: 100%;
+    height: 52px;
+}
+.menu2  ul {
+    list-style: none;
+    margin-left: 80px;
+}
+.menu2  ul li 
+{   
+   
+    position: relative;
+    display: inline-block;
+    padding: 10px ;
+}
+.menu2 ul li a
+{
+    text-decoration: none;
+}
+.menu2  ul li a:hover
+{
+    color:  rgba(230, 138, 105, 0.678);
+}
+.search 
+{
+    height: 30px;
+    width: 305px;
+    background-color: white;
+    border: solid black 1px;
+    border-radius: 5px;
+    margin-left: 350px;
+    
+}
+.search input {
+    width: 255px;
+    height: 25px;
+    border: none white 0xp;
+    
+    border-radius: 5px; 
+    padding-left: 10px;
+    margin-left: 0px;
+    
+}
+.search button 
+{
+    border: none;
+    padding-top: 5px;
+    vertical-align: middle;
+    opacity: 50%;
+}
+/*submenu*/
+.menu2 ul li .submenu a
+{
+    text-decoration: none;
+    margin-left: -30px;
+    margin-right: 20px;
+    font-size: 16px;
+}
+.menu2 ul li > .submenu  {
+    background-color: cornsilk;
+    width:180px;
+    height: 110px;
+    display: none;
+    position: absolute;
+    margin-left: -60px;
+    
+   
+}
+.menu2 ul li:hover ul{
+    display: block;
+}
+/*submenu1*/
+.menu2 ul li > .submenu1 {
+    background-color: cornsilk;
+    width:160px;
+    height: 150px;
+    display: none;
+    position: absolute;
+    margin-left: -40px;  
+}
+.menu2 ul li .submenu1 a
+{
+    text-decoration: none;
+    margin-left: -30px;
+    margin-right: 20px;
+    font-size: 16px;
+}
+/* banner */
+.banner   
+{
+    padding-top: 30px;
+    box-sizing: border-box;
+    
+}
+.banner .prev{
+    padding-left: 20px;
+}
+.banner .next{
+
+    padding-left: 1270px;
+}
+.prev, .next {
+    
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: 60px;
+    color:white;
+    font-weight: bold;
+    font-size: 80px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+/* main */
+
+/* first */
+.main h3 
+{
+    margin-top:20px;
+    margin-left: 43.5%;
+    color: #1d4574;
+    font-size: 20px;
+    font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main #icon1
+{   
+    margin-top: 0px;
+    margin-left: 48%;
+    margin-bottom: 2px;
+}
+.main #first 
+{
+    height: 1152px;
+    width: 1170px;
+    display: grid;
+    grid-template-columns: 256px 256px 256px 256px ;
+    grid-template-rows: 305px 305px 305px  ;
+    margin-top: 5px;
+    margin-left: 180px;
+    margin-bottom: 0;
+}
+.items img 
+{
+    margin-bottom: 5px;  
+    margin-top: 40px;  
+    width: 215px  ;
+    height: 215px;
+}
+
+.items img:hover {
+    width: 250px;
+    height: 250px;
+}
+/* second */
+.main #news
+{ 
+    margin-top : -240px;
+    margin-left: 45.5%;
+}
+.main #second
+{
+    margin-top: 10px;
+    height: 750px;
+    width: 1170px;
+    display: grid;
+    grid-template-columns: 305px 305px 305px  ;
+    grid-template-rows: 305px  ;
+    margin-top: 5px;
+    margin-left: 160px;
+    margin-bottom: 30px;
+    padding: 0;
+}
+.main #second .listnews
+{
+    margin-left: -40px;
+    padding-left: 109px;
+}
+.listnews img
+
+{
+   
+    width: 255px  ;
+    height: 255px;
+}
+.listnews a
+{
+    font-weight: bolder;
+    text-decoration: none;
+    
+}
+/* third */
+.main #trend
+{ 
+    margin-top : -450px;
+    margin-left: 41.5%;
+}
+.main #third
+{
+    margin-top: 0px;
+    height: 850px;
+    width: 1170px;
+    display: grid;
+    grid-template-columns: 305px 305px 305px 305px ;
+    grid-template-rows: 305px  305px ;
+    margin-top: 5px;
+    margin-left: 120px;
+}
+.trends img
+{  
+    width: 215px  ;
+    height: 215px;
+}
+.trends a
+{
+    margin-left: 0px;
+}
+.trends img:hover
+{
+    width: 250px;
+    height: 250px;
+}
+/* footer */
+#footer
+{
+    margin-top: -220px;
+    width: 100%;
+    height: 350px;
+    background-color:blanchedalmond ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid 1px black;
+}
+
+#footer > div
+{   margin-right: 70px;
+    margin-left: 70px;
+    color: black;
+    width: 270px;
+    height: 100%;
+    background-color: blanchedalmond;
+    display: inline;
+    font-weight: bold;
+}
+.footer1 img 
+{
+    height: 20px;
+    width: 16px;
+    vertical-align: middle;
+    padding-left: 2px;
+}
+.footer1 
+{
+ padding-top: -20px;
+ font-size: 15px;
+}
+.footer2 input 
+{
+    height: 25px;
+    width: 300px;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.gioHangCot1 {
+    width: 33%;
+    height: 100%;
+    flex-direction: column;
+}
+.gioHangCot2 {
+    width: 33%;
+    height: 100%;
+    flex-direction: column;
+}
+.gioHangCot3 {
+    width: 33%;
+    height: 100%;
+    flex-direction: column;
+}
+
+#thanhtoan {
+    float: right; 
+    margin-right: 25px; 
+    background-color:black; 
+    color:white;
+    height: 60px;
+    width : 200px;
+}
+
+#thanhtoan:hover {
+    height: 66px;
+    border: solid 3px blue;
+}
+
+#nutMua:hover {
+    height: 40px;
+    width: 70px;
+}
+
+#kiemTra:hover {
+    border: solid 3px black;
+    width: 160px;
+}
+
+#xong:hover {
+    border: solid 3px blue;
+}
+
+.menu1 {
+    font-size: 15px;
+}

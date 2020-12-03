@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Pha-Ke Socks | Vớ Thời Trang Pha-Ke</title>
+    <script src="index.js"></script>
+</head>
+<body>
+   <div class="container">
+            <div id='modalbox' style="display: none;">
+                <button id='close1' onclick="closeModal()">&times</button>
+                <h2>Lời Giới Thiệu</h2>
+                <img src="img/logo.jpg" alt="" style="width: 200px; height:  85px;">
+                <div style="padding-left: 10px; padding-right: 10px;">
+                <p>Dù có phải là một người am hiểu thời trang hay không, chắn chắn không ai không biết đến huyền thoại Phake-Socks. Đó chính là hiện thân của đẳng cấp, quyền lực, của sự sang trọng bậc nhất từ đế chế thời trang mang tên Phake-Socks.</p>
+                <p>PhaKe-Socks (viết tắt là PS) là thương hiệu thời trang cao cấp đến từ Pháp danh giá bậc nhất thế giới, thành lập từ năm 1854. Các sản phẩm của thương hiệu PS hãng bao gồm các loại tất từ tất mùa hè,mùa thu, mùa đông cho tới mùa xuân. Nét đặc trưng của tất cả sản phẩm này là họa tiết chữ PS ở trên đầu với 2 chiếc tất xinh xinh ở góc trái tượng trưng cho sự quý phái và sang trọng.</p>
+                </div>
+                </div>
+            </div>
+
+            
+        
+        <div class='listmenu'>
+            <div class="menu1">
+                    <ul>
+                        <li class="logo" >
+                            <a href="">
+                                <img src="img/logo.jpg" alt="" style="width: 200px; height:  85px;">
+                            </a>
+                        </li>
+
+                        <li id="hello">
+                            
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/tele.jpg" alt="" style="width: 9.44px; height: 14px;">
+                                0987654321
+                            </a>
+                           
+                        </li>
+                        <li>
+                            <a href="SignUp/signup.html">
+                            ĐĂNG KÍ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="SignIn/signin.html">
+                            ĐĂNG NHẬP
+                            </a>
+                        </li>
+                       <li> 
+                           
+                        <p id='giohang' onclick="xacNhan()">
+                            GIỎ HÀNG 
+                          
+                            <img src="img/giohang.png" alt="" style="height: 55px; width: 55px;" >
+                        </p>
+                        <li>
+                            <a href="" onclick="logOut()">
+                            ĐĂNG XUẤT
+                            </a>
+                        </li>
+                    </li>                      
+                </ul>
+
+            </div>
+            <div class="menu2">
+               <ul> <li>
+                    <p onclick="gioiThieu()">
+                    GIỚI THIỆU
+                    </p>
+                </li>
+                <li>
+                    <a href="" class="products">SẢN PHẨM </a>
+                    <ul class='submenu'>
+                       <li><a href="#new-product">SẢN PHẨM MỚI </a></li>
+                       <li><a href="#trend">SẢN PHẨM NỔI BẬT </a></li>
+                      
+                    
+                    </ul>
+                </li>
+                <li>
+                    <a href="#footer">LIÊN HỆ</a>
+                    <!-- <ul class='submenu1'>
+                        <li><a href="">CÁCH THỨC MUA HÀNG </a></li>
+                        <li><a href="">ĐỊA CHỈ </a></li>
+                        <li><a href="">PHÍ VẬN CHUYỂN</a></li><br>
+                  
+                     
+                     </ul> -->
+                </li>
+                <li>
+                    <a href="#news">
+                    TIN TỨC
+                </a>
+                </li>
+                <li><div class="search">
+                   <input type="text" name=""  placeholder="Tìm kiếm..."> 
+                   <button >
+                       <img src="img/search.png" alt="" style="height: 16px;width: 15px;">
+                   </button>
+                </div>
+           </div>
+        </li>
+        </ul>
+        </div>
+        <div class='banner'>
+           
+            <div class="mySlides " >
+                
+                <img src="banner/slideshow_1.jpg" style="width:100%" class='imgss'>
+                
+              </div>
+             <div class="mySlides ">
+               
+                <img src="banner/2.jpg" style="width:100%" class='imgss'>
+                
+              </div>
+              <div class="mySlides ">
+               
+                <img src="img/logo.jpg" style="width:100%" class='imgss'>
+                
+              </div>
+            <div class ='trans'>
+              <a class="prev" onclick="prevImgs()"><</a>
+              <a class="next" onclick="nextImgs()">></a>
+            </div>  
+             
+        </div>
+        <div class='main'>
+            <br><br>
+            <h3 id='new-product'>SẢN PHẨM MỚI</h3>
+            <span>
+                <img src="item/icon_featured.webp" alt="" id="icon1">
+            </span>
+            <hr style="height: 2px;" class ='cutpage'><br>
+            <div id='first'>First
+
+            </div>
+            
+            
+            <h3 id='news' style="margin-top: 0px;">TIN TỨC</h3>
+            <span>
+                <img src="item/icon_featured.webp" alt="" id="icon1">
+            </span>
+            <hr style="height: 2px;" class ='cutpage'><br>
+            <div id='second'>Second
+            
+            </div>
+            <h3 id='trend'>SẢN PHẨM NỔI BẬT</h3>
+            <span>
+                <img src="item/icon_featured.webp" alt="" id="icon1">
+            </span>
+            <hr style="height: 2px;" class ='cutpage'><br>
+            <div id="third">Third</div>
+        </div>
+        <div id='footer'>
+            <div class='footer1'>
+                <h3>GIỚI THIỆU PHAKESOCKS</h3>
+                <div>Cửa hàng vớ thời trang TPHCM. Cung cấp hàng ngàn mẫu mã vớ đẹp phù hợp với mọi lứa tuổi</div><br>
+                <div><img src='footer/home.jpg' alt="">  399/31 Nguyễn Đình Chiểu P 5 Q3 TPHCM</div><br>
+                <div><img src='footer/home.jpg' alt="">  64 Trần Đình Xu P Cô Giang Q1 TPHCM</div><br>
+                <div><img src='footer/mail.png' alt="">  phakesocks@gmail.com</div><br>
+                <div><img src='img/tele.jpg' alt="">  0922.19.2828</div><br><br>
+                <div>Copyright © 2020 PHAKESOCKS.</div>
+            </div>
+            <div class="footer2">
+                <h3>LIÊN KẾT</h3>
+                <input type="text" placeholder="Nhập email của bạn..."><br>
+                <div><br>Hãy nhập email của bạn để nhận thông tin</div>
+            </div>
+            <div class="footer3">
+                <h3>KẾT NỐI VỚI PHAKESOCKS</h3>
+            </div>
+            
+        </div>
+    </div>   
+
+    <script src="index.js"></script>
+</body>
+</html>

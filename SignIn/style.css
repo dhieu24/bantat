@@ -1,0 +1,30 @@
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/000/541/148/non_2x/vector-abstract-beautiful-sunshine-coral-color-gradient-background.jpg');
+    height: 750px;
+    color: #b5c689;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input {
+    width: 500px;
+    height: 50px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+}
+
+[type = "submit"] {
+    height: 65px;
+    width: 510px;
+    background-color: lightcoral;
+}
+
+input:hover {
+    border: solid 3px bold;
+}
